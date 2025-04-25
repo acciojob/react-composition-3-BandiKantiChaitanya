@@ -1,17 +1,10 @@
 
 import React, { useState } from "react";
-import './../styles/App.css';
+import './../styles/Tooltip.css';
 import Tooltip from "./Tooltip";
 
 const App = () => {
-  let text='This is a tooltip'
-  let [visualise,setVisualise]=useState(false)
-  function handleHover(){
-    setVisualise(true)
-  }
-  function handleLeave(){
-    setVisualise(false)
-  }
+  
   return (
     <div>
         <h2 className="tooltip">
