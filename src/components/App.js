@@ -8,12 +8,12 @@ const App = () => {
   return (
     <div className="App" >
         <h2 className="tooltip">
-          <Tooltip text="This is a tooltip for first element" >
+          <Tooltip text="TThis is a tooltip for the first element" >
           This is a tooltip
           </Tooltip>
         </h2>
         <p className="tooltip">
-          <Tooltip text="This is a tooltip for seccond element" >
+          <Tooltip text="This is a tooltip for the second element" >
           This is a another tooltip
           </Tooltip>
         </p>
