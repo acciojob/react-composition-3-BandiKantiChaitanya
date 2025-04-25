@@ -1,23 +1,14 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react';
 
-
-function Tooltip({text}) {
-    let [visualise,setVisualise]=useState(false)
-  function handleHover(){
-    setVisualise(true)
-  }
-  function handleLeave(){
-    setVisualise(false)
-  }
+const Tooltip =({ text, children})=>{
+  const [visible, setVisible] =useState(false);
+  const showTooltip =()=>setVisible(true);
+  const hideTooltip =()=>setVisible(false);
   return (
-    <div>
-         <h2 className='tooltip' onMouseOver={handleHover} onMouseLeave={handleLeave}>Hover on me</h2>
-        {
-          visualise &&
-          <p className='tooltip' style={{backgroundColor:'red'}}>{text}</p>
-        }
+    <div  onMouseEnter={showTooltip} onMouseLeave={hideTooltip}>
+        {children}
+        {visible && <div className="tooltiptext">{text}</div>}
     </div>
-  )
+  );
 }
-
-export default Tooltip
+export default Tooltip;
