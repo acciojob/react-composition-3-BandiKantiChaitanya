@@ -16,11 +16,11 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
 
-        <h2 onMouseOver={handleHover} onMouseLeave={handleLeave}>Hover on me</h2>
+        {/* <h2  className="tooltip" onMouseOver={handleHover} onMouseLeave={handleLeave}>Hover on me</h2>
         {
           visualise &&
-          <p style={{backgroundColor:'red'}}>{text}</p>
-        }
+          <p   className="tooltip" style={{backgroundColor:'red'}}>{text}</p>
+        } */}
         <Tooltip text={text} />
     </div>
   )

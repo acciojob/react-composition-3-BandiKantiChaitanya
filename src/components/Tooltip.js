@@ -14,7 +14,7 @@ function Tooltip({text}) {
          <h2 className='tooltip' onMouseOver={handleHover} onMouseLeave={handleLeave}>Hover on me</h2>
         {
           visualise &&
-          <p className='tooltip' style={{backgroundColor:'red'}}>This is another tooltip</p>
+          <p className='tooltip' style={{backgroundColor:'red'}}>{text}</p>
         }
     </div>
   )
