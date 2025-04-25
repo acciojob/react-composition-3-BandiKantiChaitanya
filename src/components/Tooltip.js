@@ -11,10 +11,10 @@ function Tooltip({text}) {
   }
   return (
     <div>
-         <h1 onMouseOver={handleHover} onMouseLeave={handleLeave}>Hover on me</h1>
+         <h2 className='tooltip' onMouseOver={handleHover} onMouseLeave={handleLeave}>Hover on me</h2>
         {
           visualise &&
-          <p style={{backgroundColor:'red'}}>This is another tooltip</p>
+          <p className='tooltip' style={{backgroundColor:'red'}}>This is another tooltip</p>
         }
     </div>
   )
